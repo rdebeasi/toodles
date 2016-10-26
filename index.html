@@ -12,7 +12,11 @@
         <button class="new-add btn">Add</button>
       </form>
       <ul class="tasks">
-        <li v-for="task in tasks" v-bind:class="{ done: task.isDone }"><label><input type="checkbox" v-model="task.isDone">{{task.descr}}</label></li>
+        <li v-for="task in tasks" v-bind:class="{ done: task.isDone }">
+          <label>
+            <input type="checkbox" v-model="task.isDone">{{task.descr}}
+          </label>
+        </li>
       </ul>
     </section>
   </main>
