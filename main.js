@@ -10,7 +10,7 @@
     el: '#app',
     data: {
       tasks: [
-        new Task('Implement MVC framework'),
+        new Task('Implement MV* framework'),
         new Task('Build a great product'),
         new Task('????'),
         new Task('Profit!!!')
