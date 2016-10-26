@@ -7,14 +7,12 @@
   <main>
     <h1>Toodles - To-do demo</h1>
     <section id="app">
-      <form action="" class="new">
-        <input type="text" class="new-name">
+      <form action="" class="new" v-on:submit.prevent="addNew">
+        <input type="text" class="new-name" v-model="newTodoDescr">
         <button class="new-add btn">Add</button>
       </form>
       <ul class="tasks">
-        <li><label><input type="checkbox">Do a thing</label></li>
-        <li><label><input type="checkbox">Do another thing</label></li>
-        <li><label><input type="checkbox">Do a third thing</label></li>
+        <li v-for="task in tasks"><label><input type="checkbox">{{task.descr}}</label></li>
       </ul>
     </section>
   </main>
