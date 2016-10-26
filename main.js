@@ -1,6 +1,6 @@
 (function(){
   function Task(descr) {
-    this.done = false;
+    this.isDone = false;
     this.descr = descr;
 
     return this;
