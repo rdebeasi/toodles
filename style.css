@@ -2,10 +2,11 @@ body {
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
   background-color: #e4edf7;
   color: #333;
+  font-size: 16px;
 }
 
 main {
-  max-width: 1000px;
+  max-width: 800px;
   margin: 40px auto 0;
   background-color: #fff;
   padding: 20px;
@@ -15,4 +16,38 @@ main {
 
 h1:first-child {
   margin-top: 0;
+}
+
+.btn, input[type=text] {
+  font-size: 16px;
+  padding: 5px;
+  height: 35px;
+  box-sizing: border-box;
+}
+
+.btn {
+  border: none;
+  background-color: #2b6197;
+  border-radius: 0;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #4587ca;
+}
+
+.tasks {
+  list-style-type: none;
+  padding: 0;
+}
+
+.tasks label {
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.tasks label:hover {
+  background-color: #eee;
 }
