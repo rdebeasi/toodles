@@ -10,8 +10,10 @@
     el: '#app',
     data: {
       tasks: [
-        new Task('Do a thing'),
-        new Task('Do another thing')
+        new Task('Implement MVC framework'),
+        new Task('Build a great product'),
+        new Task('????'),
+        new Task('Profit!!!')
       ],
       newTodoDescr: ''
     },
